@@ -1,0 +1,39 @@
+# Ignore Terraform state files (apply to all directories)
+*.tfstate
+*.tfstate.*
+# Ignore Terraform working directories in all subdirectories
+**/.terraform/
+**/.terraform.lock.hcl  
+# Ignore lock file in all subdirectories
+
+# Ignore Terraform provider plugin directories
+.terraform/
+**/.terraform/ 
+
+# Ignore backup and crash logs
+*.backup
+crash.log
+
+# Ignore sensitive variable files (across all directories)
+*.tfvars
+*.tfvars.json
+
+# Ignore Terraform execution plan files
+*.tfplan
+
+# Ignore override files (local changes)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore generated SSH keys
+*.pem
+*.key
+
+# Ignore logs
+*.log
+
+# Ignore macOS system files
+.DS_Store
+.idea
